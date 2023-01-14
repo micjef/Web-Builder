@@ -1,0 +1,41 @@
+{   
+  "name": "Wweb Builder",
+  "version": "0.1.0",
+  "description": "App to build website use drag and drop",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.4",
+    "@reduxjs/toolkit": "^1.5.0",
+    "build-ui": "0.1.0-alpha.16",
+    "clsx": "^1.1.1",
+    "immer": "^8.0.1",
+    "next": "^10.2.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "^7.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "keywords": [
+    "web",
+    "builder",
+    "micjef",
+    "web-builder",
+    "react",
+    "nextjs",
+    "js",
+    "javascript"
+  ],
+  "author": "micjef",
+  "license": "ISC"
+}
