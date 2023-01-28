@@ -36,7 +36,7 @@ const useDemoLayers = ({ delegatePixels = 10, ...params }) => {
     const { getDnDEventClientCoords } = helpers;
     const [, y] = getDnDEventClientCoords(event);
     const inside =
-      rect.top + delegatePixels < y &&
+      rect.top + delegatePixels + 20 < y &&
       rect.top + rect.height - delegatePixels > y;
     if (!inside) {
       return;
@@ -45,7 +45,6 @@ const useDemoLayers = ({ delegatePixels = 10, ...params }) => {
   }
   function handleDragEnter(event) {
     hover.handleHoverEnter(event);
-    console.log('hai');
   }
   function handleDragLeave(event) {
     hover.handleHoverLeave(event);
