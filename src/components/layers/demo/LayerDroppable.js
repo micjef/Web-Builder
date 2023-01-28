@@ -33,6 +33,7 @@ const LayerDroppable = ({ id, depth }) => {
       onDragOver={handleDragOver}
       onDrop={handleDrop}
       className={classes.droppable}
+      draggable={true}
     >
       <LayerDetail depth={depth} draggable={depth > 0} id={id}>
         <span onClick={handleToggleExpand}>
