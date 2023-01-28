@@ -50,7 +50,7 @@ export default {
           position: "absolute",
           left: "9%",
           top: "12%",
-          width: "100%",
+          width: "80%",
           height: "77px",
         },
       },

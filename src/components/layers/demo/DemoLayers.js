@@ -5,7 +5,7 @@ import LayerDroppable from "./LayerDroppable";
 const DemoLayers = () => {
   const view = {
     Canvas: LayerDroppable,
-    Section: LayerDraggable,
+    Section: LayerDroppable,
     Alert: LayerDraggable,
     Image: LayerDraggable,
     Text: LayerDraggable,
