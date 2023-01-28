@@ -1,4 +1,4 @@
-import { useCollector } from "build-ui";
+// import { useCollector } from "build-ui";
 import useDemoEditor from "../../../hooks/useDemoEditor";
 import useStyle from "./styles/LayerDetail";
 import LockOpenOutlinedIcon from "@material-ui/icons/LockOpenOutlined";
@@ -7,10 +7,10 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import clsx from "clsx";
 
 const LayerDetail = ({ id, children, depth, className, ...rest }) => {
-  const selector = (selectors) => selectors.selectById(id);
-  const collected = useCollector({
-    selector: selector,
-  });
+  // const selector = (selectors) => selectors.selectById(id);
+  // const collected = useCollector({
+  //   selector: selector,
+  // });
   const editor = useDemoEditor({
     id: id,
   });
@@ -29,7 +29,7 @@ const LayerDetail = ({ id, children, depth, className, ...rest }) => {
           )}
         </span>
       )}
-      <span className={classes.type}>- {collected.node.type}</span>
+      <span className={classes.type}>- {id}</span>
       {depth > 0 && (
         <span onClick={editor.handleDelete}>
           <DeleteIcon className={classes.deleteIcon} />

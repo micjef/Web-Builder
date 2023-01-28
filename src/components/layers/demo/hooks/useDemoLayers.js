@@ -45,6 +45,7 @@ const useDemoLayers = ({ delegatePixels = 10, ...params }) => {
   }
   function handleDragEnter(event) {
     hover.handleHoverEnter(event);
+    console.log('hai');
   }
   function handleDragLeave(event) {
     hover.handleHoverLeave(event);
